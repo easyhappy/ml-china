@@ -30,7 +30,7 @@ class UsersController < ApplicationController
     drop_breadcrumb(@user.login, user_path(@user.login))
     drop_breadcrumb(t("users.menu.favorites"))
   end
-  
+
   def notes
     @notes = @user.notes.published.recent.paginate(:page => params[:page], :per_page => 30)
     drop_breadcrumb(@user.login, user_path(@user.login))
@@ -47,7 +47,7 @@ class UsersController < ApplicationController
     current_user.authorizations.destroy_all({ :provider => provider })
     redirect_to edit_user_registration_path, :flash => {:warring => t("users.unbind_success", :provider => provider.titleize )}
   end
-  
+
   def update_private_token
     current_user.update_private_token
     render :text => current_user.private_token

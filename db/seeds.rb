@@ -18,7 +18,7 @@ eos
 # Wiki 首页 HTML
 SiteConfig.save_default("wiki_index_html",<<-eos
 <div class="box">
-  Wiki Home page.
+  Wiki Home page.aaaa
 </div>
 eos
 )

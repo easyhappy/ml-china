@@ -101,6 +101,8 @@ group :development, :test do
 
   gem "mongoid_colored_logger", "0.2.2"
 end
+gem 'therubyracer'
+gem 'execjs'
 
 group :assets do
   gem 'sass-rails', "~> 3.2.3"

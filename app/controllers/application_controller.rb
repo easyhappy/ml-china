@@ -78,12 +78,12 @@ class ApplicationController < ActionController::Base
       end
     end
   end
-  
+
   def unread_notify_count
     return 0 if current_user.blank?
     @unread_notify_count ||= current_user.notifications.unread.count
   end
-  
+
   def fresh_when(opts = {})
     opts[:etag] ||= []
     # 保证 etag 参数是 Array 类型

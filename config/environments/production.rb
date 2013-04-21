@@ -42,7 +42,7 @@ RubyChina::Application.configure do
 
   # Enable threaded mode
   # config.threadsafe!
-  
+
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation can not be found)
   config.i18n.fallbacks = true
@@ -58,11 +58,12 @@ RubyChina::Application.configure do
 
   # Generate digests for assets URLs
   config.assets.digest = true
+  config.assets.initialize_on_precompile = false
 
   config.assets.js_compressor  = :uglifier
   config.assets.css_compressor = :scss
   config.assets.precompile += %w(application.css app.js topics.css topics.js window.css front.css cpanel.css search.css
-  users.css pages.css pages.js notifications.js notifications.css sites.css sites.js notes.css notes.js 
+  users.css pages.css pages.js notifications.js notifications.css sites.css sites.js notes.css notes.js
   gfdynamicfeedcontrol.css gfdynamicfeedcontrol.js mobile.css home.css)
 
 
