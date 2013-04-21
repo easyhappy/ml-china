@@ -25,7 +25,7 @@ RubyChina::Application.configure do
 
   # Use a different cache store in production
   # config.cache_store = :mem_cache_store
-  #config.cache_store = [:dalli_store,"127.0.0.1", {:namespace => "rb-cn", :compression => true}]
+  config.cache_store = [:dalli_store,"127.0.0.1", {:namespace => "rb-cn", :compression => true}]
 
   # Disable Rails's static asset server
   # In production, Apache or nginx will already do this
@@ -36,9 +36,9 @@ RubyChina::Application.configure do
 
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false
-  #config.action_mailer.default_url_options = { :host => Setting.domain }
-  #config.action_mailer.delivery_method   = :postmark
-  #config.action_mailer.postmark_settings = { :api_key => Setting.email_password }
+  config.action_mailer.default_url_options = { :host => Setting.domain }
+  config.action_mailer.delivery_method   = :postmark
+  config.action_mailer.postmark_settings = { :api_key => Setting.email_password }
 
   # Enable threaded mode
   # config.threadsafe!
@@ -51,20 +51,20 @@ RubyChina::Application.configure do
   config.active_support.deprecation = :notify
 
   # Compress JavaScripts and CSS
-  #config.assets.compress = true
+  config.assets.compress = true
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
-  #config.assets.compile = false
+  config.assets.compile = false
 
   # Generate digests for assets URLs
   #config.assets.digest = true
-  #config.assets.initialize_on_precompile = false
+  config.assets.initialize_on_precompile = false
 
-  #config.assets.js_compressor  = :uglifier
-  #config.assets.css_compressor = :scss
-  #config.assets.precompile += %w(application.css app.js topics.css topics.js window.css front.css cpanel.css search.css
-  #users.css pages.css pages.js notifications.js notifications.css sites.css sites.js notes.css notes.js
-  #gfdynamicfeedcontrol.css gfdynamicfeedcontrol.js mobile.css home.css)
+  config.assets.js_compressor  = :uglifier
+  config.assets.css_compressor = :scss
+  config.assets.precompile += %w(application.css app.js topics.css topics.js window.css front.css cpanel.css search.css
+  users.css pages.css pages.js notifications.js notifications.css sites.css sites.js notes.css notes.js
+  gfdynamicfeedcontrol.css gfdynamicfeedcontrol.js mobile.css home.css)
 
 
 end
