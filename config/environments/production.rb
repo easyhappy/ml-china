@@ -54,7 +54,7 @@ RubyChina::Application.configure do
   config.assets.compress = true
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
-  config.assets.compile = false
+  config.assets.compile = true
 
   # Generate digests for assets URLs
   #config.assets.digest = true
@@ -64,8 +64,7 @@ RubyChina::Application.configure do
   config.assets.css_compressor = :scss
   config.assets.precompile += %w(application.css app.js topics.css topics.js window.css front.css cpanel.css search.css
   users.css pages.css pages.js notifications.js notifications.css sites.css sites.js notes.css notes.js
-  gfdynamicfeedcontrol.css gfdynamicfeedcontrol.js mobile.css home.css)
-
+  gfdynamicfeedcontrol.css gfdynamicfeedcontrol.js mobile.css home.css bootstrap.scss)
 
 end
 
