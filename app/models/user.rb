@@ -139,7 +139,6 @@ class User
 
   # 回帖大于 150 的才有酷站的发布权限
   def site_editor?
-    puts "11111111111111111111111", self.admin?
     self.admin? or self.replies_count >= 100
   end
 

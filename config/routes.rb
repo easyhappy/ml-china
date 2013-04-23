@@ -1,7 +1,7 @@
 RubyChina::Application.routes.draw do
   require 'api'
   require "api_v2"
-  
+
   resources :sites
   resources :pages, :path => "wiki" do
     collection do

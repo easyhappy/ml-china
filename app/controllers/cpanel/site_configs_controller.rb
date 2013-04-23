@@ -11,7 +11,6 @@ class Cpanel::SiteConfigsController < Cpanel::ApplicationController
 
   def update
     @site_config = SiteConfig.find(params[:id])
-
     if @site_config.update_attributes(params[:site_config])
       redirect_to edit_cpanel_site_config_path(params[:id]), notice: "保存成功."
     else

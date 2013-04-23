@@ -9,8 +9,7 @@ class PagesController < ApplicationController
   def index
     set_seo_meta("Wiki")
     drop_breadcrumb("索引")
-
-    fresh_when(:etag => [SiteConfig.wiki_index_html])
+    fresh_when(:etag => [SiteConfig.index_html])
   end
 
   def recent

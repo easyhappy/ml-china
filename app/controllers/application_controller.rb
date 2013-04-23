@@ -96,6 +96,7 @@ class ApplicationController < ActionController::Base
     opts[:etag] << SiteConfig.footer_html
     opts[:etag] << SiteConfig.faye_server
     opts[:etag] << Setting.google_analytics_key
+    opts[:etag] << SiteConfig.index_html
     # 加入通知数量
     opts[:etag] << unread_notify_count
     # 所有 etag 保持一天
