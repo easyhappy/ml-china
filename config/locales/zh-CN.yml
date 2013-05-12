@@ -1,5 +1,4 @@
 "zh-CN":
-  web_title:    机器学习
   mongoid:
     models:
       user: "用户"
