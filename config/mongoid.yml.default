@@ -8,7 +8,7 @@ development:
     default:
       hosts:
         - SETUP_DEVELOPMENT_HOST
-      database: ruby_china_dev
+      database: ruby_china
 
 test:
   <<: *defaults
