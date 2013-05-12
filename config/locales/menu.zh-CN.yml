@@ -1,4 +1,4 @@
-"zh-CN":
+zh-CN:
   common:
     justnow: '刚刚'
     hour: '小时'
@@ -73,6 +73,7 @@
   sites:
     create: 提交网站
   menu:
+    home_index:  "首页"
     topics: "社区"
     wiki: "Wiki"
     users: "会员"

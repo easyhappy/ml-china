@@ -7,7 +7,7 @@
                     /____/
   ========================================================
                                           ruby-china.org
-        
+
   App Environments:
   --------------------------------------------------------
   Ruby:  <%= RUBY_VERSION %><%= "-p#{RUBY_PATCHLEVEL}" if defined? RUBY_PATCHLEVEL %>
@@ -41,10 +41,8 @@
   <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
       <div class="container">
-        <h3>
-          <a href="/"><%= image_tag("text_logo.png", :style => "width:123px;height:29px;") %></a>
-        </h3>
         <%= render_list :class => "nav" do |li|
+           li << link_to(t("menu.home_index"), root_url)
            li << link_to(t("menu.topics"), topics_path)
            li << link_to(t("menu.wiki"), pages_path )
            li << link_to(t("menu.sites"), sites_path ) if !mobile?
@@ -80,7 +78,7 @@
   <a class="go_top" href="#"><i class="icon icons_go_top"></i></a>
   <footer class="footer">
     <div class="container">
-      <%= raw SiteConfig.footer_html %> 
+      <%= raw SiteConfig.footer_html %>
     </div>
   </footer>
   <% end %>

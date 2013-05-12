@@ -68,7 +68,7 @@ module ApplicationHelper
   end
 
   def render_page_title
-    site_name = Setting.app_name
+    site_name = t("web_title")
     title = @page_title ? "#{site_name} | #{@page_title}" : site_name rescue "SITE_NAME"
     content_tag("title", title, nil, false)
   end
