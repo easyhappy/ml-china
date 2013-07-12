@@ -78,6 +78,7 @@ gem 'garelic', '0.0.2'
 gem "god"
 
 group :development, :test do
+  gem 'brakeman',       :require => false
   gem 'capistrano', '2.9.0', :require => false
   gem 'rvm-capistrano', :require => false
   gem "memcache-client", "1.8.5"
