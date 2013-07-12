@@ -5,6 +5,7 @@ defaults: &defaults
   admin_emails:
     - "meeasyhappy@gmail.com"
     - "tuifeide@gmail.com"
+    - "114464369@qq.com"
   google_analytics_key: ""
   upload_url: "http://ruby-china-files-dev.b0.upaiyun.com"
   upyun_username: "test"
